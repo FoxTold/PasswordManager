@@ -1,0 +1,7 @@
+[submodule "deps/SQLiteCpp"]
+	path = deps/SQLiteCpp
+	url = https://github.com/SRombauts/SQLiteCpp.git
+	branch = sqlitecpp-3.x
+[submodule "deps/cryptopp-cmake"]
+	path = deps/cryptopp-cmake
+	url = https://github.com/abdes/cryptopp-cmake.git
