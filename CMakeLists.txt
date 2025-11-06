@@ -11,15 +11,5 @@ set(SQLITECPP_BUILD_EXAMPLES OFF)
 set(SQLITECPP_BUILD_TESTS OFF)
 
 add_subdirectory(deps)
-
-add_executable(PasswordManager src/main.cpp)
-
-target_link_libraries(PasswordManager
-    SQLiteCpp
-    sqlite3
-    cryptopp::cryptopp
-)
-
-target_include_directories(PasswordManager PRIVATE
-    ${CMAKE_CURRENT_LIST_DIR}/thirdparty/SQLiteCpp/include
- )
+add_subdirectory(secpass)
+add_subdirectory(samples)
